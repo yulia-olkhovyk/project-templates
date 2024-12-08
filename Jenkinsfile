@@ -16,10 +16,5 @@ pipeline {
                 sh 'ssh root@jenkins-agent-alma \'hostname\''
             }
         }
-        stage("Second step") {
-            steps {
-                sh 'ssh root@jenkins-agent-alma1 \'uptime\''
-            }
-        }
     }
 }
